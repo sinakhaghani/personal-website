@@ -3,6 +3,9 @@
     text-decoration: none;
     float: right;
 }
+.ul_list li{
+   margin-top: 10px;
+}
 ul li a {
     text-decoration: none;
     padding: 5px;
@@ -11,4 +14,11 @@ ul li a {
 ul li i{
     padding: 5px;
     color: #0d6efd;
+}
+.a_icon i{
+    color: #676767;
+    opacity: .5;
+}
+.a_icon i:hover{
+    opacity: 1;
 }
