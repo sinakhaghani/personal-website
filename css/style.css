@@ -1,0 +1,14 @@
+.ul_list{
+    text-align: right;
+    text-decoration: none;
+    float: right;
+}
+ul li a {
+    text-decoration: none;
+    padding: 5px;
+    color: #2c3034;
+}
+ul li i{
+    padding: 5px;
+    color: #0d6efd;
+}
