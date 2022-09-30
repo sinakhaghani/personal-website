@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "iransens";
+    src: url("../font/Vazir-Thin.woff2");
+}
+body{
+    font-family: "iransens";
+}
 .ul_list{
     text-align: right;
     text-decoration: none;
@@ -21,4 +28,24 @@ ul li i{
 }
 .a_icon i:hover{
     opacity: 1;
+}
+@media screen {
+    .div-sidebar{
+        min-width: 100px;
+    }
+}
+
+.progress {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 0;
+}
+.title_tech_stack{
+    font-family: Arial;
+}
+
+.progress .progress-bar {
+    transition: unset;
 }
