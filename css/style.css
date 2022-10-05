@@ -5,6 +5,9 @@
 body{
     font-family: "iransens";
 }
+.span_title_name{
+    font-family: "Monotype Corsiva";
+}
 .ul_list{
     text-align: right;
     text-decoration: none;
