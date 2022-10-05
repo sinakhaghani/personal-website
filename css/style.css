@@ -38,6 +38,12 @@ ul li i{
     }
 }
 
+@media (min-width: 576px) {
+    .div-sidebar{
+        min-width: 180px;
+    }
+}
+
 .progress {
     margin-bottom: 20px;
 }
