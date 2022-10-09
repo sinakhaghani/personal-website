@@ -1,0 +1,62 @@
+body{
+    font-family: Arial;
+}
+.span_title_name{
+    font-family: "Monotype Corsiva";
+}
+.ul_list{
+    text-align: left;
+    text-decoration: none;
+    float: left;
+}
+.ul_list li{
+    margin-top: 10px;
+}
+ul li a {
+    text-decoration: none;
+    padding: 5px;
+    color: #2c3034;
+}
+ul li i{
+    padding: 5px;
+    color: #0d6efd;
+}
+.a_icon i{
+    color: #676767;
+    opacity: .5;
+}
+.a_icon i:hover{
+    opacity: 1;
+}
+@media screen {
+    .div-sidebar{
+        min-width: 100px;
+    }
+}
+
+@media (min-width: 576px) {
+    .div-sidebar{
+        min-width: 180px;
+    }
+}
+
+.progress {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 0;
+}
+.title_tech_stack{
+    font-family: Arial;
+}
+
+.progress .progress-bar {
+    transition: unset;
+}
+.p_portfolio_github{
+    margin-top: 150px;
+}
+.p_contact{
+    margin-top: 50px;
+}
