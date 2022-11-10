@@ -73,7 +73,7 @@
                                         <li>
                                             <a href="https://mail.google.com" target="_blank">
                                                 <i class="bi bi-google"></i>
-                                                <span class="spn_ic">sina.it91@gmail.com</span>
+                                                <span class="spn_ic">sina.it91</span>
                                             </a>
                                         </li>
                                         <li>
@@ -191,67 +191,36 @@
 
                 </section>
 
-                <section id="favorites" class="row mt-4 p-2">
-                    <div class="col-12">
-                        <h3 class="fw-bold col-12 text-center">علاقه‌مندی‌ها</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col row-cols-md-3 row-cols-sm-4 col-lg-4 mt-3">
-                            <div class="card" style="width: 12rem;">
-                                <img class="card-img-top border-bottom" src="./img/books_logo.png" alt="Card image cap" >
-                                <div class="card-body">
-                                    <p class="card-title text-center h6 fw-bold">کتاب</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col row-cols-md-3 row-cols-sm-4 col-lg-4 mt-3">
-                            <div class="card" style="width: 12rem;">
-                                <img class="card-img-top border-bottom" src="./img/cinema_logo.png" alt="Card image cap" >
-                                <div class="card-body">
-                                    <p class="card-title text-center h6 fw-bold">فیلم و سینما</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col row-cols-md-3 row-cols-sm-4 col-lg-4 mt-3">
-                            <div class="card" style="width: 12rem;">
-                                <img class="card-img-top border-bottom" src="./img/icon_sport.png" alt="Card image cap" >
-                                <div class="card-body">
-                                    <p class="card-title text-center h6 fw-bold">ورزش</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col row-cols-md-3 row-cols-sm-4 col-lg-4 mt-3">
-                            <div class="card" style="width: 12rem;">
-                                <img class="card-img-top border-bottom" src="./img/coffee_logo.png" alt="Card image cap" >
-                                <div class="card-body">
-                                    <p class="card-title text-center h6 fw-bold">قهوه</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col row-cols-md-3 row-cols-sm-4 col-lg-4 mt-3">
-                            <div class="card" style="width: 12rem;">
-                                <img class="card-img-top border-bottom" src="./img/nature_logo.png" alt="Card image cap" >
-                                <div class="card-body">
-                                    <p class="card-title text-center h6 fw-bold">طبیعت گردی</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col row-cols-md-3 row-cols-sm-4 col-lg-4 mt-2">
-                            <div class="card" style="width: 12rem;">
-                                <img class="card-img-top border-bottom" src="./img/travel_logo.png" alt="Card image cap" >
-                                <div class="card-body">
-                                    <p class="card-title text-center h6 fw-bold">سفر</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
+               <section id="favorites" class="row mt-4 p-2">
+                   <div class="col-12">
+                       <h3 class="fw-bold col-12 text-center">علاقه مندی ها</h3>
+                   </div>
+                   <div class="container">
+                       <div class="inner-container">
+                           <div class="card inactive-1"></div>
+                           <div class="card inactive-2"></div>
+                           <div class="card">
+                               <div class="content active">
+                                   <h1>کتاب</h1>
+                                   <p>بیشتر کتابهای نجوم و تخصصی <i class="em em-coffee"></i></p>
+                                   <a class="button" href="#next"> بعدی &rarr;</a>
+                               </div>
+                               <div class="content">
+                                   <h1>فیلم و سینما</h1>
+                                   <p>بیشتر سینمای هالیوود</p>
+                                   <a class="button" href="#next"> بعدی &rarr;</a>
+                               </div>
+                               <div class="content">
+                                   <h1>ورزش</h1>
+                                   <p>ورزشهای رزمی و کوهنوردی</p>
+                                   <a class="button" href="#next"> بعدی &rarr;</a>
+                               </div>
+                               <div class="progress-container">
+                                   <div class="step"></div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
 
                 </section>
 
@@ -312,25 +281,7 @@
 
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script  src="./js/script.js"></script>
 
-
-<script>
-    var delay = 500;
-    $(".progress-bar").each(function(i) {
-        $(this).delay(delay * i).animate({
-            width: $(this).attr('aria-valuenow') + '%'
-        }, delay);
-
-        $(this).prop('Counter', 0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: delay,
-            // easing: 'swing',
-            step: function(now) {
-                $(this).text(Math.ceil(now) + '%');
-            }
-        });
-    });
-</script>
 </body>
 </html>
