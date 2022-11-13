@@ -35,6 +35,7 @@ ul li i{
 }
 .a_icon i:hover{
     opacity: 1;
+    color: #0d6efd;
 }
 @media screen {
     .div-sidebar{
