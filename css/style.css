@@ -3,10 +3,14 @@
     src: url("../font/Vazir-Thin.woff2");
 }
 body{
-    font-family: "iransens";
+    font-family: "iransens", sans-serif;
 }
-.span_title_name{
-    font-family: "Monotype Corsiva";
+.a_title_name{
+    font-family: "Monotype Corsiva", sans-serif;
+}
+.spn_ic{
+    direction: rtl;
+    text-align: right;
 }
 .ul_list{
     text-align: right;
@@ -138,7 +142,7 @@ favorites style
 }
 
 h1 {
-    font-family: "Titillium Web", sans-serif;
+    font-family: "iransens", sans-serif;
     font-weight: 700;
     font-size: 3rem;
     color: #00bfc2;
@@ -153,19 +157,33 @@ a {
     color: #00CED1;
     text-decoration: none;
     position: relative;
+    display: flex;
 }
 a:before {
     content: "";
     position: absolute;
     bottom: 2px;
-    left: 0;
+    right: 0;
     width: 0%;
     border-bottom: 2px solid #00CED1;
     transition: 0.3s;
 }
-a:hover:before {
-    width: 80%;
+
+   /*style menu list about*/
+.li-a:nth-child(1)>a:hover:before {
+    width: 140px;
 }
+.li-a:nth-child(2)>a:hover:before {
+    width: 110px;
+}
+.li-a:nth-child(3)>a:hover:before {
+    width: 90px;
+}
+.li-a:nth-child(4)>a:hover:before {
+    width: 110px;
+}
+    /*style menu list about*/
+
 /*
 favorites style
 */
