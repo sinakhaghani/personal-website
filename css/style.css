@@ -4,6 +4,7 @@
 }
 body{
     font-family: "iransens", sans-serif;
+    /*background-color: #eaeaea ;*/
 }
 .a_title_name{
     font-family: "Monotype Corsiva", sans-serif;
@@ -51,6 +52,7 @@ ul li i{
 
 .progress {
     margin-bottom: 20px;
+    padding-right: 0px;
 }
 
 .progress-bar {
@@ -113,7 +115,7 @@ favorites style
     box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.35);
 }
 .card:first-child, .card:nth-child(2) {
-    background: #00c4c7;
+    background: #0d6efd;
     height: 8px;
     border-radius: 5px 5px 0 0;
     padding: 0;
@@ -121,7 +123,7 @@ favorites style
 }
 .card:first-child {
     margin: 0 20px;
-    background: #00b0b2;
+    background: #0d6efd;
 }
 .card:nth-child(2) {
     margin: 0 10px;
@@ -146,7 +148,7 @@ h1 {
     font-family: "iransens", sans-serif;
     font-weight: 700;
     font-size: 3rem;
-    color: #00bfc2;
+    color: #0d6efd;
     margin: 0;
 }
 
@@ -155,7 +157,7 @@ p {
 }
 
 a {
-    color: #00CED1;
+    color: #0d6efd;
     text-decoration: none;
     position: relative;
     display: flex;
