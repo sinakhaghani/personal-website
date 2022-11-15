@@ -11,38 +11,38 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body dir="rtl">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed" style="z-index: 999; width: 100%">
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">خانه </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">درباره من</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">نمونه کارها</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">ارتباط با من</a>
+            </li>
+        </ul>
+    </div>
+    <a class="navbar-brand a_title_name" href="#" style="margin-left: 10px;">Sina khaghani</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+    <div class="">
         <div class="row ">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed" style="z-index: 999">
-
-                <div class="collapse navbar-collapse" id="navbarColor01">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">خانه </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">درباره من</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">نمونه کارها</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">ارتباط با من</a>
-                        </li>
-                    </ul>
-                </div>
-                <a class="navbar-brand a_title_name" href="#" style="margin-left: 10px;">Sina khaghani</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-
-            <div class="row py-3 mt-5">
-                <section class="row " id="home">
+            <div class="col-12 background-gray">
+                <div class="row py-3 mt-4 ">
+                <section class="col-12 background-home mt-3" id="home">
                     <div id="carouselExampleSlidesOnly" class="carousel slide home_section" data-ride="carousel">
-                        <div class="carousel-inner home_section">
-                            <div class="carousel-item active p-2 home_section">
+                        <div class="">
+                            <div class=" col-md-12 col-sm-12 col-lg-8 col-xl-8 active p-2 home_div">
                                 <div class="col-4 pull-right d-inline-block" >
                                     <img class="d-block w-100 img-thumbnail" src="./img/personal.jpg" alt="First slide">
                                 </div>
@@ -95,10 +95,12 @@
                         </div>
                     </div>
                 </section>
+                <section class="col-12 section-none"></section>
+                <div class="col-md-12 col-sm-12 col-xl-12" id="about" style="min-height: 30px"></div>
                 <div class="col-md-12 col-sm-12 col-xl-12 mt-5">
                     <h3 class="fw-bold col-12 text-center">درباره من</h3>
                 </div>
-                <section id="about" class="col-md-12 col-sm-12 col-xl-6 mt-4 p-4" >
+                <section class="col-md-12 col-sm-12 col-xl-6 mt-4 p-4" >
                     <div class="row mt-4">
                         <p class="p-2 col-12 text-right"> مهندس فناوری اطلاعات و دارای 6 سال سابقه‌ی برنامه نویسی و 2 سال تدریس.</p>
                         <p class="p-2 col-12 text-right" > علاقه مند به مباحث شبکه و امنیت.</p>
@@ -106,92 +108,92 @@
                     </div>
                     <div class="row p-2 ">
                         <span class="title_tech_stack">php</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">Laravel</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">Node js</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">python</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">Livewire</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">َAndroid (java)</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">WebSocket DesignPattern UnitTest SOLID</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">html css</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">Javascript</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">oop mvc</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">WHMCS</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">Restful API</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">Mysql MongoDB Redis</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">MCSA</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70</div>
                         </div>
                         <br>
 
                         <span class="title_tech_stack">Scrum Jira</span>
-                        <div class="progress border">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80</div>
+                        <div class="progress border border-gray">
+                            <div class="progress-bar background-home" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80</div>
                         </div>
                         <br>
 
@@ -218,7 +220,7 @@
                                <div class="content">
                                    <h1>ورزش</h1>
                                    <p>ورزشهای رزمی و کوهنوردی</p>
-                                   <a class="button a-next" href="#next"> بعدی &rarr;</a>
+                                   <a class="button a-next " href="#next"> بعدی &rarr;</a>
                                </div>
                                <div class="progress-container">
                                    <div class="step"></div>
@@ -234,50 +236,51 @@
                            </li>
                            <li class="list-group-item d-flex justify-content-between align-items-center">
                                فریلنسر (پاره وقت)
-                               <span class="badge bg-primary rounded-pill">مهر 94</span>
+                               <span class="badge bg-main color-white rounded-pill">مهر 94</span>
                            </li>
                            <li class="list-group-item d-flex justify-content-between align-items-center">
                                شرکت مشکات (پاره وقت)
-                               <span class="badge bg-primary rounded-pill">مهر 99</span>
+                               <span class="badge bg-main color-white rounded-pill">مهر 99</span>
                            </li>
                            <li class="list-group-item d-flex justify-content-between align-items-center">
                                d-codesland
-                               <span class="badge bg-primary rounded-pill">فروردین 99</span>
+                               <span class="badge bg-main color-white rounded-pill">فروردین 99</span>
                            </li>
                            <li class="list-group-item d-flex justify-content-between align-items-center">
                                ایرانسرور
-                               <span class="badge bg-primary rounded-pill">فروردین 1400</span>
+                               <span class="badge bg-main color-white rounded-pill">فروردین 1400</span>
                            </li>
                            <li class="list-group-item d-flex justify-content-between align-items-center">
                                تدریس در آموزشگاه راشد
-                               <span class="badge bg-primary rounded-pill">تیر 1400</span>
+                               <span class="badge bg-main color-white rounded-pill">تیر 1400</span>
                            </li>
                            <li class="list-group-item d-flex justify-content-between align-items-center">
                                پارس سیستم
-                               <span class="badge bg-primary rounded-pill">فروردین 1401</span>
+                               <span class="badge bg-main color-white rounded-pill">فروردین 1401</span>
                            </li>
                        </ul>
                    </div>
 
                 </section>
-
-                <section id="portfolio" class="row mt-4 p-2 " style="min-height: 450px;">
+               <div class="col-md-12 col-sm-12 col-xl-12" id="portfolio" style="min-height: 30px"></div>
+                <section class="row mt-4 p-2 background-home" style="min-height: 450px;">
                     <div class=" col-12">
                         <h3 class="fw-bold col-12 text-center"> نمونه کارها</h3>
-                        <p class="p-2 col-12 text-center p_contact d-inline-block">شما می‌توانید با دنبال کردن لینک <a href="https://github.com/sinakhaghani" class="d-inline-block" target="_blank" >GitHub</a> من از آخرین پروژه های open source من مطلع شوید.</p>
-                        <p class="p-2 col-12 text-center p_contact d-inline-block"> همچنین رزومه‌ی کامل من در سایت <a href="https://jobinja.ir/user/sinakh" class="d-inline-block" target="_blank" >جابینجا</a> قابل مشاهده می باشد. </p>
-                        <p class="p-2 col-12 text-center p_contact d-inline-block"> مقالات من را در سایت <a href="https://virgool.io/@sina.it91" class="d-inline-block" target="_blank" >ویرگول</a> دنبال کنید. </p>
+                        <p class="p-2 col-12 text-center p_contact d-inline-block">شما می‌توانید با دنبال کردن لینک <a href="https://github.com/sinakhaghani" class="d-inline-block  a-link" target="_blank" >GitHub</a> من از آخرین پروژه های open source من مطلع شوید.</p>
+                        <p class="p-2 col-12 text-center p_contact d-inline-block"> همچنین رزومه‌ی کامل من در سایت <a href="https://jobinja.ir/user/sinakh" class="d-inline-block  a-link" target="_blank" >جابینجا</a> قابل مشاهده می باشد. </p>
+                        <p class="p-2 col-12 text-center p_contact d-inline-block"> مقالات من را در سایت <a href="https://virgool.io/@sina.it91" class="d-inline-block  a-link" target="_blank" >ویرگول</a> دنبال کنید. </p>
                     </div>
                 </section>
-
-                <section class="row mt-4 p-2 " id="contact" style="min-height: 400px;">
+                <div class="col-md-12 col-sm-12 col-xl-12" id="contact" style="min-height: 30px"></div>
+                <section class="row mt-4 p-2 " style="min-height: 400px;">
                     <div class="col-12">
                         <h3 class="fw-bold col-12 text-center"> ارتباط با من</h3>
-                        <p class="p-2 col-12 text-center p_contact d-inline-block"> شما می توانید از طریق ایمیل (sina.it91@gmail.com) یا آیدی تلگرام <a href="https://t.me/sinakh93" class="d-inline-block" target="_blank">sinakh93@</a> با من تماس بگیرید. </p>
-                        <p class="p-2 col-12 text-center p_contact d-inline-block"> همچنین در اینستاگرام با آیدی <a href="https://www.instagram.com/sina.kh93/" class="d-inline-block" target="_blank" > sina.kh93@ </a> و در <a href="https://www.linkedin.com/in/sina-khaghani-02b200207" class="d-inline-block" target="_blank" >لینکدین</a> به من پیام دهید. </p>
+                        <p class="p-2 col-12 text-center p_contact d-inline-block"> شما می توانید از طریق ایمیل (sina.it91@gmail.com) یا آیدی تلگرام <a href="https://t.me/sinakh93" class="d-inline-block a-link" target="_blank">sinakh93@</a> با من تماس بگیرید. </p>
+                        <p class="p-2 col-12 text-center p_contact d-inline-block"> همچنین در اینستاگرام با آیدی <a href="https://www.instagram.com/sina.kh93/" class="d-inline-block a-link" target="_blank" > sina.kh93@ </a> و در <a href="https://www.linkedin.com/in/sina-khaghani-02b200207" class="d-inline-block a-link" target="_blank" >لینکدین</a> به من پیام دهید. </p>
                     </div>
                 </section>
 
+            </div>
             </div>
         </div>
     </div>
