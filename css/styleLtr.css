@@ -1,13 +1,53 @@
-body{
-    font-family: Arial;
+@font-face {
+    font-family: "iransens";
+    src: url("../font/Vazir-Thin.woff2");
 }
-.span_title_name{
-    font-family: "Monotype Corsiva";
+body{
+    font-family: sans-serif, Arial;
+}
+.background-home{
+    background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+    background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+}
+.p_100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.background-gray{
+    background-color: #e9e9e9;
+}
+.div-footer{
+    min-height: 80px;
+    font-family: sans-serif, Arial;
+}
+.home_div{
+    min-height: 550px;
+    border-radius: 12px;
+    position: relative;
+    bottom: -100px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+    z-index: 998;
+}
+.section-none{
+    z-index: 1;
+    min-height: 100px;
+}
+.a_title_name{
+    font-family: "Monotype Corsiva", sans-serif;
+}
+.spn_ic{
+    direction: ltr;
+    text-align: left;
+    margin-top: 5px;
 }
 .ul_list{
     text-align: left;
     text-decoration: none;
     float: left;
+    position: relative;
 }
 .ul_list li{
     margin-top: 10px;
@@ -19,7 +59,7 @@ ul li a {
 }
 ul li i{
     padding: 5px;
-    color: #0d6efd;
+    color: #766dff;
 }
 .a_icon i{
     color: #676767;
@@ -27,6 +67,7 @@ ul li i{
 }
 .a_icon i:hover{
     opacity: 1;
+    color: #766dff;
 }
 @media screen {
     .div-sidebar{
@@ -42,8 +83,13 @@ ul li i{
 
 .progress {
     margin-bottom: 20px;
+    padding-left: 0px;
+    border-radius: 10px;
+    background: #e8e8e8;
 }
-
+.border-gray{
+    border-color: #c4c4c4 !important;
+}
 .progress-bar {
     width: 0;
 }
@@ -54,9 +100,146 @@ ul li i{
 .progress .progress-bar {
     transition: unset;
 }
-.p_portfolio_github{
-    margin-top: 150px;
-}
 .p_contact{
-    margin-top: 50px;
+    margin-top: 40px;
 }
+.home_section{
+    /*min-height: 500px;*/
+}
+h1, h2, h3, h4, h6, span{
+    color: #3c3c3c !important;
+}
+.bg-main{
+    background-color: #766dff;
+}
+.color-white{
+    color: #dcdcdc !important;
+}
+.color-primary{
+    color: #0d6efd !important;
+}
+.a-link{
+    color: #0a53be !important;
+}
+.a-link:hover{
+    color: #0d6efd !important;
+}
+
+/*
+favorites style
+*/
+.container {
+    margin: 4em auto;
+}
+
+.inner-container {
+    position: relative;
+    max-width: 20%;
+    min-width: 360px;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto 100px;
+}
+
+.content {
+    position: absolute;
+    opacity: 0;
+    top: 2em;
+    left: 10%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.active {
+    display: block !important;
+    margin: 0 auto;
+    opacity: 1;
+    transition: ease-in-out 1s;
+}
+
+.card {
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+    padding: 2em 0;
+    height: 300px;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.35);
+}
+.card:first-child, .card:nth-child(2) {
+    background: #766dff;
+    height: 8px;
+    border-radius: 5px 5px 0 0;
+    padding: 0;
+    box-shadow: none;
+}
+.card:first-child {
+    margin: 0 20px;
+    background: #766dff;
+}
+.card:nth-child(2) {
+    margin: 0 10px;
+}
+.card .progress-container {
+    background: rgba(37, 117, 252, 0.2);
+    height: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+}
+.card .progress-container .step {
+    background-color: #766dff;
+    height: 6px;
+    width: 33%;
+    border-radius: 0 0 0 5px;
+}
+
+h1 {
+    font-family: "iransens", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #3c3c3c;
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+a {
+    color: #0a53be;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+}
+a:before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #766dff;
+    transition: 0.3s;
+}
+
+/*style menu list about*/
+.li-a:nth-child(1)>a:hover:before {
+    width: 120px;
+}
+.li-a:nth-child(2)>a:hover:before {
+    width: 110px;
+}
+.li-a:nth-child(3)>a:hover:before {
+    width: 90px;
+}
+.li-a:nth-child(4)>a:hover:before {
+    width: 140px;
+}
+/*style menu list about*/
+
+/*
+favorites style
+*/

@@ -17,6 +17,10 @@ body{
 .background-gray{
     background-color: #e9e9e9;
 }
+.div-footer{
+    min-height: 80px;
+    font-family: sans-serif, Arial;
+}
 .home_div{
     min-height: 500px;
     border-radius: 12px;
@@ -37,6 +41,7 @@ body{
 .spn_ic{
     direction: rtl;
     text-align: right;
+    margin-top: 5px;
 }
 .ul_list{
     text-align: right;
