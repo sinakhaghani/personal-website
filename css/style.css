@@ -3,6 +3,7 @@
     src: url("../font/Vazir-Thin.woff2");
 }
 body{
+    direction: rtl;
     font-family: "iransens", sans-serif;
 }
 .background-home{
